@@ -164,7 +164,7 @@ a { color: var(--accent); text-decoration: none; }
 /* ===== About ===== */
 .about-layout {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr 340px;
   gap: 48px;
   align-items: start;
 }
@@ -175,20 +175,20 @@ a { color: var(--accent); text-decoration: none; }
 }
 .about-details {
   background: var(--cream);
-  padding: 28px;
+  padding: 36px;
 }
 .about-details dl {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 8px 16px;
+  gap: 14px 20px;
 }
 .about-details dt {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-light);
   font-weight: 500;
 }
 .about-details dd {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 500;
 }
 
