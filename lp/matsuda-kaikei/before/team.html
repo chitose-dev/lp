@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタッフ紹介 | まつだ会計事務所</title>
+  <meta name="description" content="まつだ会計事務所のスタッフをご紹介します。経験豊富なプロフェッショナルがあなたのビジネスを全力でサポートします。">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---------- Team Page Specific ---------- */
+    .team-hero {
+      margin-top: 72px;
+      background: linear-gradient(135deg, #1a3a5c 0%, #0d2440 60%, #1a3a5c 100%);
+      color: #fff; text-align: center; padding: 60px 20px;
+    }
+    .team-hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 10px; }
+    .team-hero p { color: rgba(255,255,255,.7); font-size: 1rem; }
+
+    .team-detail { padding: 80px 0; background: #f7f9fc; }
+
+    .team-profile {
+      background: #fff; border-radius: 20px; overflow: hidden;
+      box-shadow: 0 6px 30px rgba(0,0,0,.08);
+      margin-bottom: 48px;
+      display: grid; grid-template-columns: 360px 1fr; align-items: stretch;
+      transition: transform .3s;
+    }
+    .team-profile:hover { transform: translateY(-4px); }
+
+    .team-profile-img {
+      width: 100%; height: 100%; min-height: 400px;
+      object-fit: cover;
+    }
+
+    .team-profile-body { padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
+
+    .team-profile-body .role-badge {
+      display: inline-block; background: linear-gradient(135deg, #1a3a5c, #2a5a8c);
+      color: #fff; font-size: .75rem; font-weight: 700;
+      padding: 6px 18px; border-radius: 50px; margin-bottom: 12px;
+      width: fit-content;
+    }
+
+    .team-profile-body h2 {
+      font-size: 1.6rem; font-weight: 800; color: #1a3a5c; margin-bottom: 6px;
+    }
+    .team-profile-body .name-en {
+      font-size: .85rem; color: #aaa; margin-bottom: 20px;
+    }
+
+    .team-profile-body .intro {
+      font-size: .95rem; color: #555; line-height: 2; margin-bottom: 24px;
+    }
+
+    .team-profile-body .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .team-profile-body .skill-tags span {
+      background: #e8f0fe; color: #1a3a5c; font-size: .78rem; font-weight: 600;
+      padding: 5px 14px; border-radius: 50px;
+    }
+
+    .team-profile-body .message-box {
+      background: #f7f9fc; border-radius: 12px; padding: 20px 24px;
+      border-left: 4px solid #ffd700;
+    }
+    .team-profile-body .message-box .label {
+      font-size: .78rem; color: #888; font-weight: 600; margin-bottom: 6px;
+    }
+    .team-profile-body .message-box p {
+      font-size: .9rem; color: #555; font-style: italic;
+    }
+
+    .team-cta-section {
+      background: linear-gradient(135deg, #1a3a5c, #2a5a8c);
+      text-align: center; padding: 60px 20px; color: #fff;
+    }
+    .team-cta-section h2 { font-size: 1.8rem; font-weight: 800; margin-bottom: 12px; }
+    .team-cta-section p { color: rgba(255,255,255,.7); margin-bottom: 28px; }
+    .team-cta-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffd700, #ffb300);
+      color: #1a3a5c; font-weight: 800; font-size: 1.05rem;
+      padding: 16px 44px; border-radius: 50px;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .team-cta-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(255,215,0,.4); }
+
+    @media (max-width: 900px) {
+      .team-profile { grid-template-columns: 1fr; }
+      .team-profile-img { min-height: 280px; }
+      .team-profile-body { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="header-logo">
+      <img src="logo.png" alt="まつだ会計事務所ロゴ">
+      <span>まつだ会計事務所</span>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html#features">選ばれる理由</a>
+      <a href="index.html#examples">相談事例</a>
+      <a href="index.html#pricing">料金プラン</a>
+      <a href="team.html">スタッフ紹介</a>
+      <a href="index.html#testimonials">お客様の声</a>
+      <a href="index.html#faq">よくある質問</a>
+      <a href="index.html#contact" class="header-cta">無料相談を予約する</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" id="mobileMenu">
+  <a href="index.html#features" onclick="closeMenu()">選ばれる理由</a>
+  <a href="index.html#examples" onclick="closeMenu()">相談事例</a>
+  <a href="index.html#pricing" onclick="closeMenu()">料金プラン</a>
+  <a href="team.html" onclick="closeMenu()">スタッフ紹介</a>
+  <a href="index.html#testimonials" onclick="closeMenu()">お客様の声</a>
+  <a href="index.html#faq" onclick="closeMenu()">よくある質問</a>
+  <a href="index.html#contact" onclick="closeMenu()">無料相談を予約する</a>
+</div>
+
+<!-- ========== TEAM HERO ========== -->
+<section class="team-hero">
+  <div class="container">
+    <h1>👥 スタッフ紹介</h1>
+    <p>経験豊富なプロフェッショナルチームがあなたのビジネスを全力でサポートします ✨</p>
+  </div>
+</section>
+
+<!-- ========== TEAM DETAIL ========== -->
+<section class="team-detail">
+  <div class="container">
+
+    <!-- 松田 健太郎 -->
+    <div class="team-profile fade-in">
+      <img class="team-profile-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=720&h=800&fit=crop" alt="松田 健太郎">
+      <div class="team-profile-body">
+        <span class="role-badge">代表税理士</span>
+        <h2>松田 健太郎</h2>
+        <p class="name-en">Kentaro Matsuda</p>
+        <p class="intro">
+          大手税理士法人にて10年以上の実務経験を積んだ後、2018年にまつだ会計事務所を設立。「フリーランス・個人事業主に寄り添う税理士」をコンセプトに掲げ、これまでに200社を超える創業支援を行ってきました。<br><br>
+          お客様の事業フェーズに合わせた柔軟な対応を心がけており、確定申告だけでなく、資金調達・法人化・事業計画策定まで幅広くサポートしています。 🚀
+        </p>
+        <div class="skill-tags">
+          <span>🎓 税理士</span>
+          <span>📊 創業支援</span>
+          <span>💼 法人化コンサル</span>
+          <span>📈 資金調達支援</span>
+        </div>
+        <div class="message-box">
+          <div class="label">💬 メッセージ</div>
+          <p>「独立したばかりで不安な方も、ぜひお気軽にご相談ください。あなたのビジネスの成功を、税務の面から全力でサポートいたします！」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 田中 美咲 -->
+    <div class="team-profile fade-in">
+      <img class="team-profile-img" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=720&h=800&fit=crop" alt="田中 美咲">
+      <div class="team-profile-body">
+        <span class="role-badge">税理士 / 元ITエンジニア</span>
+        <h2>田中 美咲</h2>
+        <p class="name-en">Misaki Tanaka</p>
+        <p class="intro">
+          大手SIerにてシステムエンジニアとして5年間勤務した後、税理士資格を取得。IT業界の商慣習・収益構造を深く理解しており、エンジニア・デザイナー・クリエイターなどIT系フリーランスの方から特に高い支持を得ています。<br><br>
+          「技術者が本業に集中できる環境をつくる」ことが目標。クラウド会計ソフトの導入支援やAPI連携のアドバイスまで、テクノロジーを活用した効率的な税務サポートを提供しています。 💻
+        </p>
+        <div class="skill-tags">
+          <span>🎓 税理士</span>
+          <span>💻 元ITエンジニア</span>
+          <span>☁️ クラウド会計</span>
+          <span>🔧 IT業界特化</span>
+        </div>
+        <div class="message-box">
+          <div class="label">💬 メッセージ</div>
+          <p>「エンジニアから税理士に転身した私だからこそ、IT業界特有の悩みがわかります。技術用語も通じますので、安心してご相談くださいね！」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 佐藤 大輔 -->
+    <div class="team-profile fade-in">
+      <img class="team-profile-img" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=720&h=800&fit=crop" alt="佐藤 大輔">
+      <div class="team-profile-body">
+        <span class="role-badge">スタッフ会計士</span>
+        <h2>佐藤 大輔</h2>
+        <p class="name-en">Daisuke Sato</p>
+        <p class="intro">
+          経理・記帳代行のスペシャリストとして、正確かつ迅速なデータ処理を得意としています。freee・マネーフォワード・弥生会計などの主要クラウド会計ソフトに精通しており、ソフトの導入からデータ移行、日常の仕訳入力まで幅広くサポート。<br><br>
+          チャットでのレスポンスの速さには定評があり、お客様からは「質問したらすぐ返ってくるので安心」とのお声をいただいています。 ⚡
+        </p>
+        <div class="skill-tags">
+          <span>📝 記帳代行</span>
+          <span>☁️ freee</span>
+          <span>☁️ マネーフォワード</span>
+          <span>⚡ 迅速対応</span>
+        </div>
+        <div class="message-box">
+          <div class="label">💬 メッセージ</div>
+          <p>「日々の記帳や経理作業でお困りのことがあれば、何でもお気軽にチャットで聞いてください。素早く丁寧にお答えします！」</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="team-cta-section">
+  <div class="container">
+    <h2>🎯 まずは無料でご相談ください</h2>
+    <p>経験豊富なスタッフがあなたの状況をヒアリングし、最適なプランをご提案いたします</p>
+    <a href="index.html#contact" class="team-cta-btn">🚀 無料相談を予約する</a>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="logo.png" alt="まつだ会計事務所">
+          <span>まつだ会計事務所</span>
+        </div>
+        <p>フリーランス・個人事業主専門の税理士法人</p>
+        <p>〒100-0001 東京都千代田区千代田1-1-1</p>
+        <p>📞 03-1234-5678</p>
+        <p>📧 info@matsuda-kaikei.example.jp</p>
+      </div>
+      <div class="footer-col">
+        <h4>サービス</h4>
+        <a href="index.html#features">選ばれる理由</a>
+        <a href="index.html#examples">相談事例</a>
+        <a href="index.html#pricing">料金プラン</a>
+        <a href="team.html">スタッフ紹介</a>
+        <a href="index.html#testimonials">お客様の声</a>
+        <a href="index.html#faq">よくある質問</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="index.html#contact">無料相談を予約する</a>
+        <p>営業時間：平日 9:00 - 18:00</p>
+        <p>土日祝：休業（チャットは対応可）</p>
+        <p style="margin-top: 16px;">💬 LINEでもお気軽にどうぞ</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 税理士法人まつだ会計事務所 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== JS ========== -->
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('active');
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('active');
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

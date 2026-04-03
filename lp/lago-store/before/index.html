@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAGO store｜北欧雑貨のおしゃれな通販サイト ✨</title>
+  <meta name="description" content="バイヤーが直接買い付けた素敵な北欧雑貨をお届け。日本未上陸ブランドも多数取り揃えています。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== Header ========== -->
+<header class="header">
+  <div class="header-logo"><a href="#"><img src="logo.png" alt="LAGO store"></a></div>
+  <nav class="header-nav">
+    <a href="#products">商品一覧</a>
+    <a href="#ranking">人気ランキング</a>
+    <a href="buyer-report.html">バイヤー通信</a>
+    <a href="#shipping">配送について</a>
+    <a href="#faq">よくある質問</a>
+    <a href="https://shopify.com" class="btn-secondary" style="padding:8px 24px;font-size:.8rem">ショップへ 🛒</a>
+  </nav>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#products" onclick="toggleMenu()">商品一覧</a>
+  <a href="#ranking" onclick="toggleMenu()">人気ランキング</a>
+  <a href="buyer-report.html">バイヤー通信</a>
+  <a href="#shipping" onclick="toggleMenu()">配送について</a>
+  <a href="#faq" onclick="toggleMenu()">よくある質問</a>
+  <a href="https://shopify.com">ショップへ 🛒</a>
+</div>
+
+<!-- ========== Hero ========== -->
+<section class="hero">
+  <div class="hero-content fade-up">
+    <div class="hero-emoji">🇸🇪🇩🇰🇫🇮</div>
+    <span class="hero-badge">✨ 月1回の特別入荷 ✨</span>
+    <h1>暮らしを<em>素敵</em>にする<br>おしゃれな北欧雑貨 🏠</h1>
+    <p>バイヤーが北欧の街を歩き、ひとつひとつ選んだ素敵なアイテムたち。<br>日本未上陸の素敵なブランドを、あなたのお部屋に。✨</p>
+    <a href="https://shopify.com" class="btn-primary">素敵なアイテムを見る ✨</a>
+  </div>
+</section>
+
+<!-- ========== Featured Banner ========== -->
+<section class="featured">
+  <div class="container">
+    <div class="featured-inner fade-up">
+      <div class="featured-img">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="今月の注目アイテム">
+      </div>
+      <div class="featured-text">
+        <span class="tag">🔥 今月のおすすめ</span>
+        <h2>コペンハーゲン発の素敵な<br>ハンドメイドキャンドル ✨</h2>
+        <p>デンマークの人気ブランド「Hygge Lys」のキャンドルが日本初上陸！おしゃれなデザインと天然素材にこだわった素敵な逸品です。お部屋をワンランクおしゃれにしてくれます 🕯️</p>
+        <a href="https://shopify.com" class="btn-primary">チェックする →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Products ========== -->
+<section class="section" id="products">
+  <div class="container">
+    <p class="section-subtitle">✨ PRODUCTS ✨</p>
+    <h2 class="section-title">素敵な北欧雑貨コレクション 🌿</h2>
+    <p class="section-subtitle">バイヤーが厳選した素敵でおしゃれなアイテムをお届けします</p>
+    <div class="products-grid">
+
+      <div class="product-card fade-up">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=600&q=80" alt="北欧キャンドルホルダー">
+        </div>
+        <div class="product-card-body">
+          <div class="brand">Hygge Lys ／ デンマーク 🇩🇰</div>
+          <h3>素敵なハンドメイド キャンドルホルダー</h3>
+          <div class="price">¥4,980<small>(税込)</small></div>
+          <div class="emoji-tag">🕯️ おしゃれなお部屋づくりに</div>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=80" alt="北欧テキスタイル">
+        </div>
+        <div class="product-card-body">
+          <div class="brand">Norr Textil ／ スウェーデン 🇸🇪</div>
+          <h3>素敵なリネンブランケット ナチュラルカラー</h3>
+          <div class="price">¥12,800<small>(税込)</small></div>
+          <div class="emoji-tag">🛋️ 素敵なリビングのアクセントに</div>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=600&q=80" alt="北欧マグカップ">
+        </div>
+        <div class="product-card-body">
+          <div class="brand">Keramik Studio ／ フィンランド 🇫🇮</div>
+          <h3>おしゃれな手作り陶器マグカップ</h3>
+          <div class="price">¥3,200<small>(税込)</small></div>
+          <div class="emoji-tag">☕ 素敵なティータイムに</div>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=600&q=80" alt="北欧ウォールクロック">
+        </div>
+        <div class="product-card-body">
+          <div class="brand">Tid Design ／ ノルウェー 🇳🇴</div>
+          <h3>おしゃれなミニマル ウォールクロック</h3>
+          <div class="price">¥8,500<small>(税込)</small></div>
+          <div class="emoji-tag">🕰️ おしゃれな壁面インテリアに</div>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80" alt="北欧フラワーベース">
+        </div>
+        <div class="product-card-body">
+          <div class="brand">Blomma Hem ／ スウェーデン 🇸🇪</div>
+          <h3>素敵なセラミック フラワーベース</h3>
+          <div class="price">¥5,600<small>(税込)</small></div>
+          <div class="emoji-tag">🌷 お部屋を素敵に彩る</div>
+        </div>
+      </div>
+
+      <div class="product-card fade-up">
+        <div class="product-card-img">
+          <img src="https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?w=600&q=80" alt="北欧クッションカバー">
+        </div>
+        <div class="product-card-body">
+          <div class="brand">Mökki Home ／ フィンランド 🇫🇮</div>
+          <h3>おしゃれな刺繍クッションカバー</h3>
+          <div class="price">¥3,800<small>(税込)</small></div>
+          <div class="emoji-tag">✨ 素敵なソファコーデに</div>
+        </div>
+      </div>
+
+    </div>
+    <div style="text-align:center;margin-top:48px">
+      <a href="https://shopify.com" class="btn-primary">全ての商品を見る →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Ranking ========== -->
+<section class="section" id="ranking" style="background:#f9f9f9">
+  <div class="container">
+    <p class="section-subtitle">👑 RANKING 👑</p>
+    <h2 class="section-title">人気ランキング TOP3 🏆</h2>
+    <p class="section-subtitle">みんなが選んだ素敵でおしゃれな人気アイテム</p>
+    <div class="ranking-list">
+
+      <div class="ranking-item fade-up">
+        <img src="https://images.unsplash.com/photo-1602028915047-37269d1a73f7?w=500&q=80" alt="1位">
+        <h4>ハンドメイド キャンドルホルダー</h4>
+        <div class="rank-price">¥4,980</div>
+        <div class="rank-stars">★★★★★ (4.9)</div>
+      </div>
+
+      <div class="ranking-item fade-up">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e35ca?w=500&q=80" alt="2位">
+        <h4>手作り陶器マグカップ</h4>
+        <div class="rank-price">¥3,200</div>
+        <div class="rank-stars">★★★★★ (4.9)</div>
+      </div>
+
+      <div class="ranking-item fade-up">
+        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057ab6fe?w=500&q=80" alt="3位">
+        <h4>刺繍クッションカバー</h4>
+        <div class="rank-price">¥3,800</div>
+        <div class="rank-stars">★★★★★ (4.8)</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== Buyer Report Teaser ========== -->
+<section class="buyer-teaser">
+  <div class="container">
+    <p style="font-size:.85rem;color:#f48fb1;font-weight:700;margin-bottom:8px">✈️ BUYER'S REPORT</p>
+    <h2>バイヤー買い付け通信 🇸🇪🇩🇰</h2>
+    <p>現地からお届けする素敵なレポート。おしゃれな北欧の街並みや素敵なショップをご紹介します ✨</p>
+    <div class="buyer-cards">
+
+      <div class="buyer-card fade-up">
+        <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=600&q=80" alt="ストックホルムレポート">
+        <div class="buyer-card-body">
+          <div class="date">📅 2026.03.15</div>
+          <h3>ストックホルムの素敵な蚤の市レポート ✨</h3>
+          <p>おしゃれなヴィンテージ雑貨の宝庫！素敵な出会いがたくさんありました 🇸🇪</p>
+        </div>
+      </div>
+
+      <div class="buyer-card fade-up">
+        <img src="https://images.unsplash.com/photo-1513622790541-eaa84d356909?w=600&q=80" alt="コペンハーゲンレポート">
+        <div class="buyer-card-body">
+          <div class="date">📅 2026.02.20</div>
+          <h3>コペンハーゲンのおしゃれな雑貨屋さん巡り 🏠</h3>
+          <p>デンマークデザインの素敵な世界観を感じる、おしゃれなショップ巡り 🇩🇰</p>
+        </div>
+      </div>
+
+    </div>
+    <div style="margin-top:32px">
+      <a href="buyer-report.html" class="btn-secondary">もっと読む →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Reviews ========== -->
+<section class="section" id="reviews">
+  <div class="container">
+    <p class="section-subtitle">💬 REVIEWS 💬</p>
+    <h2 class="section-title">お客様の声 💕</h2>
+    <p class="section-subtitle">素敵な商品に出会えたお客様のおしゃれな暮らしの声</p>
+    <div class="reviews-grid">
+
+      <div class="review-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>素敵なキャンドルホルダーに一目惚れしました ✨ お部屋がすごくおしゃれになって大満足です！北欧雑貨って本当に素敵ですね 💕</p>
+        <div class="reviewer">M.K さん（28歳）</div>
+      </div>
+
+      <div class="review-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>日本では手に入らないおしゃれなブランドが見つかって嬉しいです 🎉 梱包も素敵で丁寧でした。おしゃれな暮らしが実現できました ✨</p>
+        <div class="reviewer">A.S さん（32歳）</div>
+      </div>
+
+      <div class="review-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>バイヤーさんのセンスが素敵すぎます！✨ どれもおしゃれで選ぶのが楽しいです。友達にも素敵って褒められました 💕</p>
+        <div class="reviewer">Y.T さん（25歳）</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== Shipping ========== -->
+<section class="section" id="shipping" style="background:#f9f9f9">
+  <div class="container">
+    <p class="section-subtitle">📦 SHIPPING INFO 📦</p>
+    <h2 class="section-title">配送について 🚚</h2>
+    <p class="section-subtitle">安心・安全にお届けします</p>
+    <div class="shipping-grid">
+
+      <div class="shipping-item fade-up">
+        <div class="icon">📦</div>
+        <h3>丁寧な梱包</h3>
+        <p>素敵な商品を一つひとつ丁寧に梱包してお届けします。おしゃれなギフトラッピングも対応 🎁</p>
+      </div>
+
+      <div class="shipping-item fade-up">
+        <div class="icon">🚚</div>
+        <h3>全国送料無料</h3>
+        <p>¥8,000以上のお買い物で送料無料！素敵な北欧雑貨をおトクにお届けします ✨</p>
+      </div>
+
+      <div class="shipping-item fade-up">
+        <div class="icon">🔄</div>
+        <h3>安心の返品対応</h3>
+        <p>商品到着から14日以内なら返品OK。安心してお買い物をお楽しみください 💕</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="section" id="faq">
+  <div class="container">
+    <p class="section-subtitle">❓ FAQ ❓</p>
+    <h2 class="section-title">よくある質問 💭</h2>
+    <p class="section-subtitle">お客様からよくいただく質問をまとめました</p>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">商品はいつ届きますか？ 📦</button>
+        <div class="faq-answer"><div class="faq-answer-inner">ご注文から3〜7営業日でお届けします。北欧からの取り寄せ商品の場合は2〜3週間ほどお時間をいただく場合がございます。素敵な商品を丁寧にお届けしますのでお待ちください ✨</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">ギフトラッピングはできますか？ 🎁</button>
+        <div class="faq-answer"><div class="faq-answer-inner">はい、おしゃれな北欧風ラッピングをご用意しています！ご注文時にオプションからお選びください。大切な方への素敵なプレゼントにぜひどうぞ 💕</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">支払い方法は何がありますか？ 💳</button>
+        <div class="faq-answer"><div class="faq-answer-inner">クレジットカード（Visa / Master / AMEX）、PayPay、コンビニ後払い、銀行振込に対応しています。Shopifyの安全な決済システムを利用していますのでご安心ください ✨</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">返品・交換はできますか？ 🔄</button>
+        <div class="faq-answer"><div class="faq-answer-inner">商品到着から14日以内であれば返品・交換が可能です。未使用・未開封の状態でお願いします。お客様都合の返品の場合、送料はお客様負担となります。</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">入荷のスケジュールを教えてください 📅</button>
+        <div class="faq-answer"><div class="faq-answer-inner">月に1回、バイヤーが北欧各国で買い付けた素敵な商品を入荷します。新着情報はInstagramとメルマガでお知らせしますので、ぜひフォロー＆登録してくださいね ✨💕</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta">
+  <div class="container fade-up">
+    <div class="emoji-big">🌿✨🏠</div>
+    <h2>素敵な北欧雑貨で<br>おしゃれな暮らしを始めよう 💕</h2>
+    <p>バイヤーが選んだ素敵なアイテムが毎月届きます。<br>あなたのお部屋をもっとおしゃれに、もっと素敵に ✨</p>
+    <a href="https://shopify.com" class="btn-primary">ショップを見る 🛒</a>
+  </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>LAGO store 🌿</h4>
+        <p>バイヤーが直接買い付けた素敵な北欧雑貨の通販サイト。日本未上陸のおしゃれなブランドを多数取り揃えています ✨</p>
+      </div>
+      <div class="footer-col">
+        <h4>ショップ情報</h4>
+        <a href="https://shopify.com">商品一覧</a>
+        <a href="#ranking">人気ランキング</a>
+        <a href="buyer-report.html">バイヤー通信</a>
+        <a href="#shipping">配送について</a>
+        <a href="#faq">よくある質問</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <p>📧 info@lago-store.example.com</p>
+        <p>📱 Instagram: @lago_store</p>
+        <p>🕐 対応時間: 平日 10:00-18:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LAGO store. All Rights Reserved. ✨</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== Scripts ========== -->
+<script>
+// Hamburger menu
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item=btn.parentElement;
+    const answer=item.querySelector('.faq-answer');
+    const isOpen=item.classList.contains('open');
+    // close all
+    document.querySelectorAll('.faq-item').forEach(i=>{
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.maxHeight=null;
+    });
+    if(!isOpen){
+      item.classList.add('open');
+      answer.style.maxHeight=answer.scrollHeight+'px';
+    }
+  });
+});
+
+// Scroll animations
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible')}
+  });
+},{threshold:0.15});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

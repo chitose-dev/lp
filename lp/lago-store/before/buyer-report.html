@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バイヤー買い付け通信｜LAGO store ✨</title>
+  <meta name="description" content="LAGOバイヤーが北欧の街を歩いて見つけた素敵なアイテムやおしゃれなショップをレポートします。">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .report-hero{margin-top:64px;height:400px;background:linear-gradient(135deg,rgba(247,168,184,.2),rgba(255,255,255,.6)),url('https://images.unsplash.com/photo-1523906921802-b5d2d899e93b?w=1400&q=80') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center}
+    .report-hero h1{font-size:2rem;margin-bottom:8px}
+    .report-hero p{color:#666}
+
+    .report-article{max-width:760px;margin:0 auto;padding:60px 20px}
+    .report-article .article-date{font-size:.8rem;color:#f48fb1;font-weight:700;margin-bottom:8px}
+    .report-article h2{font-size:1.5rem;margin-bottom:24px;line-height:1.6}
+    .report-article .article-img{width:100%;border-radius:12px;margin:24px 0;overflow:hidden}
+    .report-article .article-img img{width:100%;height:360px;object-fit:cover}
+    .report-article p{font-size:.95rem;color:#555;line-height:2;margin-bottom:20px}
+    .report-article .highlight{background:linear-gradient(transparent 60%,#fce4ec 60%)}
+    .report-article blockquote{border-left:3px solid #f7a8b8;padding:16px 24px;margin:24px 0;background:#fafafa;border-radius:0 8px 8px 0;font-size:.9rem;color:#666;font-style:italic}
+
+    .report-list{max-width:900px;margin:0 auto;padding:0 20px 60px}
+    .report-list h2{text-align:center;margin-bottom:40px}
+    .report-entries{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+    .report-entry{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:transform .3s}
+    .report-entry:hover{transform:translateY(-4px)}
+    .report-entry img{width:100%;height:200px;object-fit:cover}
+    .report-entry-body{padding:20px}
+    .report-entry-body .date{font-size:.75rem;color:#999;margin-bottom:4px}
+    .report-entry-body h3{font-size:.95rem;margin-bottom:8px;line-height:1.5}
+    .report-entry-body p{font-size:.8rem;color:#666}
+
+    @media(max-width:768px){
+      .report-entries{grid-template-columns:1fr}
+      .report-hero{height:300px}
+      .report-hero h1{font-size:1.4rem}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== Header ========== -->
+<header class="header">
+  <div class="header-logo"><a href="index.html"><img src="logo.png" alt="LAGO store"></a></div>
+  <nav class="header-nav">
+    <a href="index.html#products">商品一覧</a>
+    <a href="index.html#ranking">人気ランキング</a>
+    <a href="buyer-report.html" style="color:#f48fb1">バイヤー通信</a>
+    <a href="index.html#shipping">配送について</a>
+    <a href="index.html#faq">よくある質問</a>
+    <a href="https://shopify.com" class="btn-secondary" style="padding:8px 24px;font-size:.8rem">ショップへ 🛒</a>
+  </nav>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#products" onclick="toggleMenu()">商品一覧</a>
+  <a href="index.html#ranking" onclick="toggleMenu()">人気ランキング</a>
+  <a href="buyer-report.html">バイヤー通信</a>
+  <a href="index.html#shipping" onclick="toggleMenu()">配送について</a>
+  <a href="index.html#faq" onclick="toggleMenu()">よくある質問</a>
+  <a href="https://shopify.com">ショップへ 🛒</a>
+</div>
+
+<!-- ========== Hero ========== -->
+<section class="report-hero">
+  <div class="hero-content fade-up">
+    <div class="hero-emoji">✈️🇸🇪🇩🇰🇫🇮🇳🇴</div>
+    <h1>バイヤー買い付け通信 ✨</h1>
+    <p>北欧の街から素敵な出会いをお届けします 💕</p>
+  </div>
+</section>
+
+<!-- ========== Latest Article ========== -->
+<article class="report-article">
+  <div class="fade-up">
+    <div class="article-date">📅 2026.03.15 ｜ ストックホルム, スウェーデン 🇸🇪</div>
+    <h2>ストックホルムの素敵な蚤の市で<br>おしゃれなヴィンテージ雑貨に出会いました ✨</h2>
+
+    <div class="article-img">
+      <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=900&q=80" alt="ストックホルムの蚤の市">
+    </div>
+
+    <p>こんにちは！LAGOバイヤーのMikiです 🙋‍♀️✨</p>
+
+    <p>今月はスウェーデン・ストックホルムの<span class="highlight">素敵な蚤の市</span>を巡ってきました！
+    3月のストックホルムはまだ肌寒いですが、春の訪れを感じる素敵な青空が広がっていました 🌤️</p>
+
+    <p>ガムラスタン（旧市街）のおしゃれな石畳の通りを抜けて、
+    セーデルマルム地区で開催されている週末マーケットへ。
+    朝9時にはもうたくさんの人で賑わっていました！素敵な雰囲気です ✨</p>
+
+    <div class="article-img">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="北欧家具">
+    </div>
+
+    <p>今回の素敵な出会いは、70年代のスウェーデン製キャンドルホルダー 🕯️
+    ハンドメイドならではの温かみのあるフォルムがとってもおしゃれで、
+    思わず10個も買い付けちゃいました！笑 💕</p>
+
+    <blockquote>
+      「北欧の蚤の市は素敵な一期一会。同じものは二度と見つからないから、おしゃれだと思ったら迷わず手に取るのがコツです ✨」— バイヤー Miki
+    </blockquote>
+
+    <p>他にも素敵なリネンのテーブルクロスや、
+    フィンランド製のおしゃれなヴィンテージ食器など、
+    <span class="highlight">たくさんの素敵なアイテム</span>を見つけることができました 🎉</p>
+
+    <div class="article-img">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80" alt="北欧インテリア">
+    </div>
+
+    <p>今回買い付けた素敵なアイテムは、4月上旬に入荷予定です！
+    おしゃれな北欧ヴィンテージ、ぜひチェックしてくださいね ✨💕</p>
+
+    <p>次回は、コペンハーゲンのおしゃれな雑貨屋さん巡りをレポートします！
+    お楽しみに 🇩🇰✨</p>
+
+    <div style="text-align:center;margin-top:40px">
+      <a href="https://shopify.com" class="btn-primary">入荷商品をチェック →</a>
+    </div>
+  </div>
+</article>
+
+<hr style="max-width:760px;margin:0 auto;border:none;border-top:1px solid #eee">
+
+<!-- ========== Past Reports ========== -->
+<section class="section">
+  <div class="report-list">
+    <h2 class="section-title">過去のバイヤー通信 📖</h2>
+    <p class="section-subtitle">素敵な北欧の旅の記録をまとめています ✨</p>
+    <div class="report-entries">
+
+      <div class="report-entry fade-up">
+        <img src="https://images.unsplash.com/photo-1513622790541-eaa84d356909?w=600&q=80" alt="コペンハーゲン">
+        <div class="report-entry-body">
+          <div class="date">📅 2026.02.20</div>
+          <h3>コペンハーゲンのおしゃれな雑貨屋さん5選 🇩🇰✨</h3>
+          <p>デンマークデザインの素敵な世界観を感じるおしゃれなショップ巡り。Hygge Lysの工房にも訪問しました 💕</p>
+        </div>
+      </div>
+
+      <div class="report-entry fade-up">
+        <img src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?w=600&q=80" alt="ヘルシンキ">
+        <div class="report-entry-body">
+          <div class="date">📅 2026.01.10</div>
+          <h3>ヘルシンキの素敵なデザイン地区を散策 🇫🇮✨</h3>
+          <p>フィンランドの素敵な陶器工房を訪問！おしゃれなハンドメイドマグカップの制作現場をレポートします 🍵</p>
+        </div>
+      </div>
+
+      <div class="report-entry fade-up">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="オスロ">
+        <div class="report-entry-body">
+          <div class="date">📅 2025.12.05</div>
+          <h3>オスロのおしゃれなクリスマスマーケット 🇳🇴🎄</h3>
+          <p>素敵なクリスマスの雰囲気の中、おしゃれな木工雑貨や手編みのニット小物を買い付けてきました ✨</p>
+        </div>
+      </div>
+
+      <div class="report-entry fade-up">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80" alt="マルメ">
+        <div class="report-entry-body">
+          <div class="date">📅 2025.11.18</div>
+          <h3>マルメ発の素敵なサステナブルブランド探訪 🇸🇪🌿</h3>
+          <p>環境先進国スウェーデンで出会ったおしゃれなエコフレンドリー雑貨たち。素敵なサステナブルライフを 💕</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta">
+  <div class="container fade-up">
+    <div class="emoji-big">🌿✨🛒</div>
+    <h2>素敵な北欧雑貨を<br>おしゃれなお部屋に迎えよう 💕</h2>
+    <p>バイヤーが現地で選んだ素敵なアイテムをお届けします ✨</p>
+    <a href="https://shopify.com" class="btn-primary">ショップを見る 🛒</a>
+  </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>LAGO store 🌿</h4>
+        <p>バイヤーが直接買い付けた素敵な北欧雑貨の通販サイト。日本未上陸のおしゃれなブランドを多数取り揃えています ✨</p>
+      </div>
+      <div class="footer-col">
+        <h4>ショップ情報</h4>
+        <a href="index.html">トップページ</a>
+        <a href="https://shopify.com">商品一覧</a>
+        <a href="index.html#ranking">人気ランキング</a>
+        <a href="buyer-report.html">バイヤー通信</a>
+        <a href="index.html#faq">よくある質問</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <p>📧 info@lago-store.example.com</p>
+        <p>📱 Instagram: @lago_store</p>
+        <p>🕐 対応時間: 平日 10:00-18:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LAGO store. All Rights Reserved. ✨</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== Scripts ========== -->
+<script>
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('visible')}
+  });
+},{threshold:0.15});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
